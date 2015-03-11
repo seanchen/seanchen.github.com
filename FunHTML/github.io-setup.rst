@@ -27,3 +27,11 @@ For the first index.html, we will add the following conent::
       <h1>Hello HTML!</h1>
     </body>
   </html>
+
+Questions
+---------
+
+#. What is your github.com user page? What's the URL?
+#. What's the different between [LOGIN_NAME].github.com and
+   [LOGIN_NAME].github.io?
+#. Create more files on your github user page repository
