@@ -13,3 +13,7 @@ tools from browser
 - position, float, 
 
 introduce **Bootstrap**
+
+this might deserve a separate topic.
+
+- step by step instruction to learn Bootstrap framework.
