@@ -12,8 +12,15 @@ tools from browser
 - color,
 - position, float, 
 
-introduce **Bootstrap**
+introduce bootstrap_
 
 this might deserve a separate topic.
 
 - step by step instruction to learn Bootstrap framework.
+
+introduce `Font Awesome`_
+
+- `Font Awesome Story <css/FontAwesomeStory.rst>`_
+
+.. _Font Awesome: https://github.com/FortAwesome/Font-Awesome
+.. _bootstrap: https://github.com/twbs/bootstrap
