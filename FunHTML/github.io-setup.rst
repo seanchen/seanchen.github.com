@@ -6,7 +6,7 @@ Steps
 
 #. Sign up github.com
 #. log in github.com
-#. create repository with exact name **[LOGIN_NAME].github.com**.
+#. create repository with exact name **[LOGIN_NAME].github.com**. Make sure to check the checkbox **Initialize this repository with a README**.
 #. Create new file (with name **index.html**) in the new repository.
 #. adding the following content to the new file and click the
    green **Commit new file** button.
