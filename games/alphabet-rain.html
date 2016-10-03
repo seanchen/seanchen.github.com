@@ -1,0 +1,231 @@
+<html>
+<head>
+  <title>Game: Alphabet Rain</title>
+
+<!-- jquery -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+
+<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+<!-- Optional theme -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+<!-- Latest compiled and minified JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+  <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.css'/>
+
+<!-- jsoneditor -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/jsoneditor/5.5.8/jsoneditor.min.css" rel="stylesheet" type="text/css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jsoneditor/5.5.8/jsoneditor.min.js"></script>
+
+<script src="https://d3js.org/d3.v3.min.js"></script>
+
+  <script src='https://github.com/leocornus/leocornus-nodejs-sandbox/raw/master/src/games/alphabet-rain.js'></script>
+</head>
+
+<body>
+<div class="container">
+  <div class="page-header">
+    <div class="row">
+      <div class="col-md-7">
+        <h1 class="">Game: Alphabet Rain</h1> 
+      </div>
+    </div>
+  </div>
+
+  <!-- nav tabs -->
+  <ul class="nav nav-tabs" role="tablist">
+    <li role="presentation" class="active">
+      <a href="#controltab" aria-controls="controltab" role="tab"
+         data-toggle="tab"
+      >Control</a>
+    </li>
+    <li role="presentation">
+      <a href="#howto" aria-controls="howto" role="tab"
+         data-toggle="tab"
+      >How to play?</a>
+    </li>
+
+    <li role="presentation">
+      <a href="#design" aria-controls="design" role="tab"
+         data-toggle="tab"
+      >Design</a>
+    </li>
+
+    <li role="presentation">
+      <a href="#memos" aria-controls="memos" role="tab"
+         data-toggle="tab"
+      >Memos</a>
+    </li>
+  </ul>
+
+  <!-- tab panes -->
+<div class="tab-content">
+
+  <div class="row tab-pane active" id="controltab" role="tabpanel">
+    <div class="col-md-6">
+      <div class="panel panel-info">
+        <div class="panel-heading">
+          Control Panel
+        </div>
+
+<!-- accordion panel group -->
+<div class="panel-group" id="accordion" role"tablist">
+
+  <!-- first One -->
+  <div class="panel panel-default">
+    <div class="panel-heading" role="tab" id="headingOne">
+      <h4 class="panel-title">
+        <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+          How to Draw Rain Drop
+        </a>
+       </h4>
+    </div>
+    <div id="collapseOne" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingOne">
+      <div class="no-panel-body">
+        <!-- data in JSON Editor -->
+        <div id="jsoneditor" style="height:460px"></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- second one -->
+  <div class="panel panel-default">
+    <div class="panel-heading" role="tab" id="headingTwo">
+      <h4 class="panel-title">
+        <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+          Collapsible Group Item #2
+        </a>
+      </h4>
+    </div>
+    <div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
+      <div class="panel-body">
+        Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+      </div>
+    </div>
+  </div>
+
+</div>
+
+        <div class="panel-footer">
+          <button id="drawGameBoard">Game Board</button>
+          <button id="drawing">Drawing</button>
+          <button id="start-dropping">Start Dropping</button>
+          <button id="stop-dropping">Stop Dropping</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-md-6">
+      <div class="panel panel-success">
+        <div class="panel-heading">
+          The Game
+        </div>
+        <!-- this panel-body div will be the game board. -->
+        <!-- We have to set position here, so the child svg -->
+        <!-- element could use absolute postion. -->
+        <div class="panel-body" id="svgpreview"
+             style="height:500px; border: 0px black solid;
+                    position: relative;
+                    padding: 0px"
+        >
+        </div>
+        <div class="panel-footer">
+          messaging
+        </div>
+      </div>
+    </div>
+  </div> <!-- end of row controltab -->
+
+  <!-- How to play tab content -->
+  <div class="tab-pane" id="howto" role="tabpanel">
+    <div>
+    <h2>How to play</h2>
+    </div>
+  </div>
+
+  <!-- Design tab content -->
+  <div class="tab-pane" id="design" role="tabpanel">
+    <div>
+    <h2>Design Ideas</h2>
+    <div class="panel panel-info">
+      <ul class="list-group">
+        <li class="list-group-item list-group-item-warning">
+          <p class="h4">Game board design</p>
+          layout, logo, branding, 
+          message displaying, counting, etc.
+        </li>
+        <li class="list-group-item list-group-item-warning">
+          <p class="h4">The rain dorp strategy...</p>
+          Border caculation<br/>
+          When to show up?<br/>
+          How fast it drop?<br/>
+          When to disapear?
+        </li>
+        <li class="list-group-item list-group-item-warning">
+          <p class="h4">The counting strategy...</p>
+          what to count? total letter? failed letter?<br/>
+        </li>
+        <li class="list-group-item list-group-item-warning">
+          <p class="h4">The level up strategy...</p>
+          when to level up?<br/>
+          what to reward for level up?
+        </li>
+        <li class="list-group-item list-group-item-warning">
+          <p class="h4">The game over strategy...</p>
+          when to game over?<br/>
+        </li>
+      </ul>
+    </div>
+    </div>
+  </div>
+
+  <div class="tab-pane" id="memos" role="tabpanel">
+    <div>
+    <h2>Design and Development Memos</h2>
+    <div class="panel panel-info">
+      <ul class="list-group">
+        <li class="list-group-item list-group-item-warning">
+          <strong>Dependences</strong>: d3, d3-cloud, jQuery
+          <br/>
+          Bootstrap is optional.
+        </li>
+        <li class="list-group-item">
+          Math.random will return range between 0 and 1.
+          It will include 0 but NOT include 1.
+        </li>
+        <li class="list-group-item list-group-item-danger">
+          Q: what is the effecient way to control the size of 
+          the word cloud?
+        </li>
+      </ul>
+      <h3>About text</h3>
+      <ul class="list-group">
+        <li class="list-group-item">
+          text could have all CSS style attributes, including
+          font-family, font-size, etc.
+        </li>
+        <li class="list-group-item">
+          The generic family name <strong>monospace</strong> has
+          the same fixed width for all glyphs.
+          Here is a example font family:
+          <strong>"Lucida Console", Courier, monospace</strong>
+        </li>
+        <li class="list-group-item">
+          <a href="https://developer.mozilla.org/en-US/docs/Web/SVG/Element/text">
+          SVG Element text</a> from MDN is very good!
+        </li>
+      <ul>
+    </div>
+    </div>
+  </div>
+</div> <!-- end of tab-content -->
+
+</div>
+</body>
+
+<script>
+
+</script>
+
+</html>
