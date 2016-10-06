@@ -1,5 +1,5 @@
 
-Sean Chen's homepage on github.com
+`Sean Chen's homepage on github.com <http://seanchen.github.io>`_
 
 Stories
 -------
