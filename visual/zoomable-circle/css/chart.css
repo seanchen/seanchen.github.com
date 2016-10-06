@@ -1,0 +1,23 @@
+.node {
+    cursor: pointer;
+}
+
+.node:hover {
+    stroke: #000;
+    stroke-width: 1.5px;
+}
+
+.node--leaf {
+    fill: white;
+}
+
+.label {
+    font: 16px "Helvetica Neue", Helvetica, Arial, sans-serif;
+    text-anchor: middle;
+    font-weight: bold;
+    text-shadow: 0 1px 0 #fff, 1px 0 0 #fff, -1px 0 0 #fff, 0 -1px 0 #fff;
+}
+
+.label, .node--root, .node--leaf, use {
+    pointer-events: none;
+}
