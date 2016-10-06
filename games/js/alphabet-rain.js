@@ -9,6 +9,9 @@ jQuery(document).ready(function($) {
         width: '400px',
         height: '600px'
       },
+      gameControl: {
+        initialDroppingInterval: '500'
+      },
       svg: {
         styles: {
           width: "32px",
@@ -87,9 +90,14 @@ jQuery(document).ready(function($) {
     $('#start-dropping').click(function() {
 
         var specs = editor.get();
+        //console.log(specs);
+        // get from specs, the unit is in ms
+        var initDroppingInterval =
+            specs.gameControl.initialDroppingInterval;
         // start dropping rain
         droppingId = droppingId > 0 ? droppingId :
-                     window.setInterval(droppingRain, 500, specs);
+                     window.setInterval(droppingRain, 
+                                        initDroppingInterval, specs);
     });
 
     $('#stop-dropping').click(function() {
