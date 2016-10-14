@@ -1,14 +1,251 @@
 <!DOCTYPE html>
-
+<html>
 <head>
-  <meta charset="utf-8">
-  <title>OPSpedia Technologies</title>
-  <link href="./css/chart.css" rel="stylesheet">
-  <script src="https://d3js.org/d3.v3.min.js"></script>
+  <title>Data Visualization: Zoomable Circles</title>
+
+<!-- jquery -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+
+<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+<!-- Optional theme -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+<!-- Latest compiled and minified JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+
+  <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.css'/>
+
+<!-- jsoneditor -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/jsoneditor/5.5.8/jsoneditor.min.css" rel="stylesheet" type="text/css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jsoneditor/5.5.8/jsoneditor.min.js"></script>
+
+<script src="https://d3js.org/d3.v3.min.js"></script>
+  <link href="/bower_components/jsoneditor/dist/jsoneditor.min.css" rel="stylesheet" type="text/css">
+
+  <script src='js/zoomable-circles.js'></script>
+
+  <style>
+.panel-heading.accordion-toggle:after {
+    /* symbol for "opening" panels */
+    font-family:'Glyphicons Halflings';
+    /* essential for enabling glyphicon */
+    content:"\e114";
+    /* adjust as needed, taken from bootstrap.css */
+    float: right;
+    position: relative;
+    bottom: 23px;
+    font-size: 15pt;
+    /* adjust as needed */
+    color: grey;
+    /* adjust as needed */
+}
+.panel-heading.accordion-toggle.collapsed:after {
+    /* symbol for "collapsed" panels */
+    content:"\e080";
+    /* adjust as needed, taken from bootstrap.css */
+}
+
+.panel-heading:hover {
+    cursor: pointer;
+}
+
+.panel-heading:hover h4 {
+    text-decoration: underline;
+}
+
+/**
+ * styles needed for zoomable circles.
+ */
+.node {
+    cursor: pointer;
+}
+
+.node:hover {
+    stroke: #000;
+    stroke-width: 1.5px;
+}
+
+.node--leaf {
+    fill: white;
+}
+
+.label {
+    font: 16px "Helvetica Neue", Helvetica, Arial, sans-serif;
+    text-anchor: middle;
+    font-weight: bold;
+    text-shadow: 0 1px 0 #fff, 1px 0 0 #fff, -1px 0 0 #fff, 0 -1px 0 #fff;
+}
+
+.label, .node--root, .node--leaf, use {
+    pointer-events: none;
+}
+  </style>
 </head>
 
 <body>
-  <script src="./js/chart.js"></script>
+<div class="container">
+  <div class="page-header">
+    <div class="row">
+      <div class="col-md-7">
+        <h1 class="">Data Visualization: Zoomable Circles</h1> 
+      </div>
+    </div>
+  </div>
+
+  <!-- nav tabs -->
+  <ul class="nav nav-tabs" role="tablist">
+    <li role="presentation" class="active">
+      <a href="#controltab" aria-controls="controltab" role="tab"
+         data-toggle="tab"
+      >Control</a>
+    </li>
+
+    <li role="presentation">
+      <a href="#design" aria-controls="design" role="tab"
+         data-toggle="tab"
+      >Design</a>
+    </li>
+
+    <li role="presentation">
+      <a href="#memos" aria-controls="memos" role="tab"
+         data-toggle="tab"
+      >Memos</a>
+    </li>
+  </ul>
+
+  <!-- tab panes -->
+<div class="tab-content">
+
+  <div class="row tab-pane active" id="controltab" role="tabpanel">
+    <div class="col-md-6">
+      <div class="panel panel-info">
+        <div class="panel-heading">
+          Control Panel
+        </div>
+
+<!-- accordion panel group -->
+<div class="panel-group" id="accordion" role"tablist">
+
+  <!-- Strategy -->
+  <div class="panel panel-default">
+    <div class="panel-heading accordion-toggle" 
+         data-toggle="collapse" data-parent="#accordion" 
+         data-target="#collapseTwo"
+         role="tab" id="headingTwo">
+      <h4 class="panel-title">
+        Examples 
+      </h4>
+    </div>
+    <div id="collapseTwo" class="panel-collapse collapse in" 
+         role="tabpanel" aria-labelledby="headingTwo">
+      <div class="panel-body">
+        <span class="h4">Choose an example:
+          <select id="example">
+            <option value="data/simple-zoomable-circle.json">
+              Simple Circles
+            </option>
+            <option value="data/simple-org-chart-circle.json">
+              Simple Organization Chart
+            </option>
+            <option value="data/opspedia-overview-in-circles.json">
+              OPSpedia Overview (Technology)
+            </option>
+          </select>
+        </span>
+      </div>
+    </div>
+  </div>
+
+  <!-- Rain drop -->
+  <div class="panel panel-default">
+    <div class="panel-heading accordion-toggle collapsed" 
+         data-toggle="collapse" data-parent="#accordion" 
+         data-target="#collapseOne"
+         role="tab" id="headingOne">
+      <h4 class="panel-title">
+        Tweak Data in JSON
+       </h4>
+    </div>
+    <div id="collapseOne" class="panel-collapse collapse" 
+         role="tabpanel" aria-labelledby="headingOne">
+      <div class="no-panel-body">
+        <!-- data in JSON Editor -->
+        <div id="jsoneditor" style="height:460px"></div>
+      </div>
+    </div>
+  </div>
+
+</div>
+
+        <div class="panel-footer">
+          <button id="reload">Reload</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-md-6">
+      <div class="panel panel-success">
+        <div class="panel-heading">
+          The Zoomable Circles 
+        </div>
+        <!-- this panel-body div will be the game board. -->
+        <!-- We have to set position here, so the child svg -->
+        <!-- element could use absolute postion. -->
+        <div class="panel-body" id="svgpreview"
+             style="height:500px; border: 0px black solid;
+                    position: relative;
+                    padding: 0px"
+        >
+        </div>
+        <div class="panel-footer">
+          messaging
+        </div>
+      </div>
+    </div>
+  </div> <!-- end of row controltab -->
+
+  <!-- Design tab content -->
+  <div class="tab-pane" id="design" role="tabpanel">
+    <div>
+    <h2>Design Ideas</h2>
+    <div class="panel panel-info">
+      <ul class="list-group">
+        <li class="list-group-item list-group-item-warning">
+          <p class="h4">Control Panel Design</p>
+          layout, logo, branding, 
+          message displaying, counting, etc.
+        </li>
+      </ul>
+    </div>
+    </div>
+  </div>
+
+  <div class="tab-pane" id="memos" role="tabpanel">
+    <div>
+    <h2>Design and Development Memos</h2>
+    <div class="panel panel-info">
+      <ul class="list-group">
+        <li class="list-group-item list-group-item-warning">
+          <strong>Dependences</strong>: d3, d3-cloud, jQuery
+          <br/>
+          Bootstrap is optional.
+        </li>
+        <li class="list-group-item list-group-item-success">
+          <strong>List JSON string here</strong>:<br/>
+          <pre id="jsonstring"></pre>
+        </li>
+      </ul>
+    </div>
+    </div>
+  </div>
+</div> <!-- end of tab-content -->
+
+</div>
 </body>
+
+<script>
+
+</script>
 
 </html>
