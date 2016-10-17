@@ -48,6 +48,7 @@
                 "imgUrl": "https://upload.wikimedia.org/wikipedia/commons/5/50/Niveau_5.svg"
             }]},
             {
+                "name": "Six",
                 "children":[{"name": "Six",
                 "size": 7000,
                 "imgUrl": "https://upload.wikimedia.org/wikipedia/commons/5/51/Niveau_6.svg"
