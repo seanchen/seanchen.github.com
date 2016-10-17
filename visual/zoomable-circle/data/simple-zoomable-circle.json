@@ -43,29 +43,33 @@
         "children": [
             {
                 "name": "Five",
+                "children":[{"name": "Five",
                 "size": 6000,
                 "imgUrl": "https://upload.wikimedia.org/wikipedia/commons/5/50/Niveau_5.svg"
-            },
+            }]},
             {
-                "name": "Six",
+                "children":[{"name": "Six",
                 "size": 7000,
                 "imgUrl": "https://upload.wikimedia.org/wikipedia/commons/5/51/Niveau_6.svg"
-            },
+            }]},
             {
                 "name": "Seven",
+                "children":[{"name": "Seven",
                 "size": 8000,
                 "imgUrl": "https://upload.wikimedia.org/wikipedia/commons/5/58/Niveau_7.svg"
-            },
+            }]},
             {
                 "name": "Eight",
+                "children":[{"name": "Eight",
                 "size": 9000,
                 "imgUrl": "https://upload.wikimedia.org/wikipedia/commons/8/88/Niveau_8.svg"
-            },
+            }]},
             {
                 "name": "Nine",
+                "children":[{"name": "Nine",
                 "size": 10000,
                 "imgUrl": "https://upload.wikimedia.org/wikipedia/commons/c/c3/Niveau_9.svg"
-            }
+            }]}
         ]
     }
 ]
