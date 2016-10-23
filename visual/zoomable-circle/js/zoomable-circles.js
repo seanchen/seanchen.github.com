@@ -19,7 +19,18 @@ jQuery(document).ready(function($) {
         // remove the existing one.
         $('#svgpreview').empty();
         // rebuild the circles.
-        circleChart(20, 500, editor.get());
+        circleChart("#svgpreview", 20, 500, editor.get());
+        // update the JSON source code.
+        $('#jsonstring').html(JSON.stringify(editor.get()).
+                              replace(/,/g, ',\n'));
+    });
+
+    // load the circles in full screen, using modal for now.
+    $('#fullscreen').click(function() {
+        $('#svgfullscreen').empty();
+        var diameter = $('#fullscreenSize').val();
+        // rebuild the circles.
+        circleChart("#svgfullscreen", 10, diameter, editor.get());
         // update the JSON source code.
         $('#jsonstring').html(JSON.stringify(editor.get()).
                               replace(/,/g, ',\n'));
@@ -40,7 +51,7 @@ function loadData(dataUrl, jsonEditor) {
         // remove the existing one.
         $('#svgpreview').empty();
         // build the circles...
-        circleChart(20, 500, jsonEditor.get());
+        circleChart("#svgpreview", 20, 500, jsonEditor.get());
         //console.log(JSON.stringify(data));
         // update the JSON source code
         $('#jsonstring').html(JSON.stringify(data).
@@ -57,7 +68,7 @@ function loadData(dataUrl, jsonEditor) {
  * @param {string} dataFile is the path to the JSON file containing data to be 
  * populated in the chart
  */
-function circleChart(margin, diameter, dataFile) {
+function circleChart(selector, margin, diameter, dataFile) {
 
     // TODO: how to visually show the color range?
     // map domain -1 to 5 to color range of hsl(152,80%,80%) 
@@ -77,7 +88,7 @@ function circleChart(margin, diameter, dataFile) {
 
     // append <g> to <svg> to the <body>
     // crate the container circle as SVG element.
-    var svg = d3.select("#svgpreview").append("svg")
+    var svg = d3.select(selector).append("svg")
         .attr("width", diameter)
         .attr("height", diameter)
         .style("margin", "auto")
@@ -166,7 +177,7 @@ function circleChart(margin, diameter, dataFile) {
     // according to zoom (active circle)
     var node = svg.selectAll("circle,text,use");
 
-    d3.select("#svgpreview")
+    d3.select(selector)
         // update background color.
         .style("background", color(-1))
         .on("click", function() { zoom(root); });

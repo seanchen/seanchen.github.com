@@ -193,6 +193,26 @@
 
         <div class="panel-footer">
           <button id="reload">Reload</button>
+          <button id="fullscreen" data-toggle="modal" data-target=".bs-example-modal-lg">Full Screen</button>
+          Set full screen diameter: <input type="number" class="form-control-inline" id="fullscreenSize"
+                 value="700">
+
+<div class="modal fade bs-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel">
+  <div class="modal-dialog modal-lg" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title" id="myModalLabel">Full Screen Preview</h4>
+      </div>
+      <div class="modal-body">
+        <div id="svgfullscreen">full screen is comming</div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
         </div>
       </div>
     </div>
@@ -245,8 +265,14 @@
           Bootstrap is optional.
         </li>
         <li class="list-group-item list-group-item-success">
-          <strong>List JSON string here</strong>:<br/>
-          <pre id="jsonstring"></pre>
+          <strong>List JSON string here</strong> 
+          <button type="button" class="btn btn-default" id="copybtn"
+                  data-clipboard-target="#jsonstring" aria-label="Left Align">
+            <span class="glyphicon glyphicon-copy" aria-hidden="true"></span>
+            Copy to clipboard
+          </button>
+          <br/>
+          <textarea rows="10" class="form-control" id="jsonstring"></textarea>
         </li>
       </ul>
     </div>
