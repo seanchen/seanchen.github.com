@@ -1,5 +1,7 @@
 jQuery(document).ready(function($) {
 
+    new Clipboard('#copybtn');
+
     var container = document.getElementById('jsoneditor');
     // load the JSON editor
     var editor = new JSONEditor(container, {});
