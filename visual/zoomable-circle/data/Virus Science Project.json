@@ -1,6 +1,6 @@
 {"name":"Virus Science Project October 2016",
 "children":[
-  {"name":"The Copying problem",
+  {"name":"\"The Copying Problem\" - by Jessica",
    "children":[
       {"name":"Host",
        "children":[
@@ -19,7 +19,7 @@
           },
 
           {"name":"What virus effect? Why?",
-           "children":[{"name":"effect many things.",
+           "children":[{"name":"",
               "size":66000,
               "imgUrl":"http://seanchen.github.io/visual/zoomable-circle/assets/host-2.png"}]}
        ]
@@ -28,16 +28,16 @@
       {"name":"Transmission",
        "children":[
           {"name":"Why virus target you?",
-           "children":[{"name":"from somewhere",
+           "children":[{"name":"",
               "size":66000,
               "imgUrl":"http://seanchen.github.io/visual/zoomable-circle/assets/transmission-1.png"}]},
 
           {"name":"What lifestyle choices",
-           "children":[{"name":"effect many things.",
+           "children":[{"name":".",
               "size":66000,
               "imgUrl":"http://seanchen.github.io/visual/zoomable-circle/assets/transmission-2.png"}]},
-          {"name":"How they effected?",
-           "children":[{"name":"describe.",
+          {"name":"How they are effected?",
+           "children":[{"name":".",
               "size":66000,
               "imgUrl":"http://seanchen.github.io/visual/zoomable-circle/assets/transmission-3.png"}]}
        ]
@@ -46,7 +46,7 @@
       {"name":"Symptoms",
        "children":[
           {"name":"How damaged system impact others",
-           "children":[{"name":"from somewhere",
+           "children":[{"name":"",
               "size":66000,
               "imgUrl":"http://seanchen.github.io/visual/zoomable-circle/assets/symptoms.png"}]}
        ]
@@ -55,7 +55,7 @@
       {"name":"Treatment",
        "children":[
           {"name":"What's the health lifestyle choices?",
-           "children":[{"name":"from somewhere",
+           "children":[{"name":"",
               "size":66000,
               "imgUrl":"http://seanchen.github.io/visual/zoomable-circle/assets/treatment.png"}]}
        ]
@@ -64,7 +64,7 @@
       {"name":"Personal Connection",
        "children":[
           {"name":"What's the health lyfestyle choices?",
-           "children":[{"name":"from somewhere",
+           "children":[{"name":"",
               "size":66000,
               "imgUrl":"http://seanchen.github.io/visual/zoomable-circle/assets/personal.png"}]}
        ]
@@ -73,7 +73,7 @@
       {"name":"Other Things",
        "children":[
           {"name":"What's the health lyfestyle choices?",
-           "children":[{"name":"from somewhere",
+           "children":[{"name":"",
               "size":66000,
               "imgUrl":"http://seanchen.github.io/visual/zoomable-circle/assets/other.png"}]}
        ]
