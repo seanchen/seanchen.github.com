@@ -10,23 +10,17 @@
                         {
                             "name": "RedHat Linux Enterprise",
                             "size": 13938,
-                            "imgUrl": "https://upload.wikimedia.org/wikipedia/en/6/6c/RedHat.svg",
-                            "imgWidth": 93,
-                            "imgHeight": 30
+                            "imgUrl": "https://upload.wikimedia.org/wikipedia/en/6/6c/RedHat.svg"
                         },
                         {
                             "name": "Windows 7",
                             "size": 3938,
-                            "imgUrl": "https://upload.wikimedia.org/wikipedia/commons/b/b8/Icon-windows_os.svg",
-                            "imgWidth": 256,
-                            "imgHeight": 256
+                            "imgUrl": "https://upload.wikimedia.org/wikipedia/commons/b/b8/Icon-windows_os.svg"
                         },
                         {
                             "name": "Ubuntu",
                             "size": 8938,
-                            "imgUrl": "https://design.ubuntu.com/wp-content/uploads/logo-ubuntu_cof-orange-hex.svg",
-                            "imgWidth": 285,
-                            "imgHeight": 285
+                            "imgUrl": "https://design.ubuntu.com/wp-content/uploads/logo-ubuntu_cof-orange-hex.svg"
                         }
                     ]
                 },
@@ -36,23 +30,17 @@
                         {
                             "name": "MariaDB",
                             "size": 3534,
-                            "imgUrl": "https://upload.wikimedia.org/wikipedia/commons/6/68/Mariadb-seal-browntext.svg",
-                            "imgWidth": 414.62,
-                            "imgHeight": 129.41
+                            "imgUrl": "https://upload.wikimedia.org/wikipedia/commons/6/68/Mariadb-seal-browntext.svg"
                         },
                         {
                             "name": "PostgreSQL",
                             "size": 5731,
-                            "imgUrl": "https://upload.wikimedia.org/wikipedia/commons/2/29/Postgresql_elephant.svg",
-                            "imgWidth": 432.071,
-                            "imgHeight": 445.383
+                            "imgUrl": "https://upload.wikimedia.org/wikipedia/commons/2/29/Postgresql_elephant.svg"
                         },
                         {
                             "name": "MySQL",
                             "size": 7840,
-                            "imgUrl": "https://upload.wikimedia.org/wikipedia/commons/0/06/Mysql-dolphin-square.svg",
-                            "imgWidth": 300,
-                            "imgHeight": 300
+                            "imgUrl": "https://upload.wikimedia.org/wikipedia/commons/0/06/Mysql-dolphin-square.svg"
                         }
                     ]
                 },
@@ -62,86 +50,62 @@
                         {
                             "name": "PHP",
                             "size": 7074,
-                            "imgUrl": "https://upload.wikimedia.org/wikipedia/commons/2/27/PHP-logo.svg",
-                            "imgWidth": 711.20123,
-                            "imgHeight": 383.5975
+                            "imgUrl": "https://upload.wikimedia.org/wikipedia/commons/2/27/PHP-logo.svg"
                         },
                         {
                             "name": "Java",
                             "size": 7074,
-                            "imgUrl": "http://xahlee.info/UnixResource_dir/gki/Java_logo_new.svg",
-                            "imgWidth": 300,
-                            "imgHeight": 550
+                            "imgUrl": "http://xahlee.info/UnixResource_dir/gki/Java_logo_new.svg"
                         },
                         {
                             "name": "Python",
                             "size": 7074,
-                            "imgUrl": "https://upload.wikimedia.org/wikipedia/commons/c/c3/Python-logo-notext.svg",
-                            "imgWidth": 110.4211,
-                            "imgHeight": 109.8461
+                            "imgUrl": "https://upload.wikimedia.org/wikipedia/commons/c/c3/Python-logo-notext.svg"
                         },
                         {
                             "name": "JavaScript",
                             "size": 7074,
-                            "imgUrl": "https://upload.wikimedia.org/wikipedia/commons/9/99/Unofficial_JavaScript_logo_2.svg",
-                            "imgWidth": 630,
-                            "imgHeight": 630
+                            "imgUrl": "https://upload.wikimedia.org/wikipedia/commons/9/99/Unofficial_JavaScript_logo_2.svg"
                         },
                         {
                             "name": "Lua",
                             "size": 6074,
-                            "imgUrl": "https://upload.wikimedia.org/wikipedia/commons/6/6a/Lua-logo-nolabel.svg",
-                            "imgWidth": 630,
-                            "imgHeight": 630
+                            "imgUrl": "https://upload.wikimedia.org/wikipedia/commons/6/6a/Lua-logo-nolabel.svg"
                         },
                         {
                             "name": "HTML",
                             "size": 7074,
-                            "imgUrl": "https://upload.wikimedia.org/wikipedia/commons/3/38/HTML5_Badge.svg",
-                            "imgWidth": 512,
-                            "imgHeight": 512
+                            "imgUrl": "https://upload.wikimedia.org/wikipedia/commons/3/38/HTML5_Badge.svg"
                         },
                         {
                             "name": "JSON",
                             "size": 3074,
-                            "imgUrl": "https://upload.wikimedia.org/wikipedia/commons/c/c9/JSON_vector_logo.svg",
-                            "imgWidth": 160,
-                            "imgHeight": 160
+                            "imgUrl": "https://upload.wikimedia.org/wikipedia/commons/c/c9/JSON_vector_logo.svg"
                         },
                         {
                             "name": "XML",
                             "size": 6074,
-                            "imgUrl": "https://upload.wikimedia.org/wikipedia/commons/e/e6/Text-xml.svg",
-                            "imgWidth": 822,
-                            "imgHeight": 754
+                            "imgUrl": "https://upload.wikimedia.org/wikipedia/commons/e/e6/Text-xml.svg"
                         },
                         {
                             "name": "CSS",
                             "size": 5074,
-                            "imgUrl": "http://io13-high-dpi.appspot.com/images/CSS3_Logo.svg",
-                            "imgWidth": 437.29,
-                            "imgHeight": 491.728
+                            "imgUrl": "http://io13-high-dpi.appspot.com/images/CSS3_Logo.svg"
                         },
                         {
                             "name": "Less",
                             "size": 3074,
-                            "imgUrl": "https://upload.wikimedia.org/wikipedia/commons/8/81/LESS_Logo.svg",
-                            "imgWidth": 961.0625,
-                            "imgHeight": 429
+                            "imgUrl": "https://upload.wikimedia.org/wikipedia/commons/8/81/LESS_Logo.svg"
                         },
                         {
                             "name": "YAML",
                             "size": 3074,
-                            "imgUrl": "http://cdn.onlinewebfonts.com/svg/img_47946.svg",
-                            "imgWidth": 1000,
-                            "imgHeight": 1000
+                            "imgUrl": "http://cdn.onlinewebfonts.com/svg/img_47946.svg"
                         },
                         {
                             "name": "SQL",
                             "size": 6074,
-                            "imgUrl": "https://upload.wikimedia.org/wikipedia/commons/0/05/Octicons-database.svg",
-                            "imgWidth": 768,
-                            "imgHeight": 1024
+                            "imgUrl": "https://upload.wikimedia.org/wikipedia/commons/0/05/Octicons-database.svg"
                         }
                     ]
                 },
@@ -151,72 +115,52 @@
                         {
                             "name": "Nginx",
                             "size": 7050,
-                            "imgUrl": "https://upload.wikimedia.org/wikipedia/commons/c/c5/Nginx_logo.svg",
-                            "imgWidth": 115.11875,
-                            "imgHeight": 24.187275
+                            "imgUrl": "https://upload.wikimedia.org/wikipedia/commons/c/c5/Nginx_logo.svg"
                         },
                         {
                             "name": "Apache HTTPd",
                             "size": 3050,
-                            "imgUrl": "https://upload.wikimedia.org/wikipedia/commons/7/7e/Apache_Feather_Logo.svg",
-                            "imgWidth": 380.4,
-                            "imgHeight": 579.2
+                            "imgUrl": "https://upload.wikimedia.org/wikipedia/commons/7/7e/Apache_Feather_Logo.svg"
                         },
                         {
                             "name": "Varnish",
                             "size": 6460,
-                            "imgUrl": "http://thingsaker.com/assets/images/blog/varnish_rabbit.svg",
-                            "imgWidth": 158,
-                            "imgHeight": 158
+                            "imgUrl": "http://thingsaker.com/assets/images/blog/varnish_rabbit.svg"
                         },
                         {
                             "name": "PureFTPd",
                             "size": 5460,
-                            "imgUrl": "https://upload.wikimedia.org/wikipedia/fr/e/ed/Pure-ftpd.png",
-                            "imgWidth": 224,
-                            "imgHeight": 64
+                            "imgUrl": "https://upload.wikimedia.org/wikipedia/fr/e/ed/Pure-ftpd.png"
                         },
                         {
                             "name": "PHP-FPM",
                             "size": 5460,
-                            "imgUrl": "https://upload.wikimedia.org/wikipedia/commons/2/27/PHP-logo.svg",
-                            "imgWidth": 711.20123,
-                            "imgHeight": 383.5975
+                            "imgUrl": "https://upload.wikimedia.org/wikipedia/commons/2/27/PHP-logo.svg"
                         },
                         {
                             "name": "Tomcat",
                             "size": 4460,
-                            "imgUrl": "https://upload.wikimedia.org/wikipedia/commons/7/7b/Tomcat-logo.svg",
-                            "imgWidth": 300,
-                            "imgHeight": 200
+                            "imgUrl": "https://upload.wikimedia.org/wikipedia/commons/7/7b/Tomcat-logo.svg"
                         },
                         {
                             "name": "Node.js",
                             "size": 3460,
-                            "imgUrl": "https://upload.wikimedia.org/wikipedia/commons/7/7e/Node.js_logo_2015.svg",
-                            "imgWidth": 590.96881,
-                            "imgHeight": 159.0246
+                            "imgUrl": "https://upload.wikimedia.org/wikipedia/commons/7/7e/Node.js_logo_2015.svg"
                         },
                         {
                             "name": "uWSGI",
                             "size": 3260,
-                            "imgUrl": "http://www.scopart.fr/wp-content/uploads/2012/10/uwsgi.png",
-                            "imgWidth": 150,
-                            "imgHeight": 150
+                            "imgUrl": "http://www.scopart.fr/wp-content/uploads/2012/10/uwsgi.png"
                         },
                         {
                             "name": "Git",
                             "size": 7460,
-                            "imgUrl": "https://upload.wikimedia.org/wikipedia/commons/3/3f/Git_icon.svg",
-                            "imgWidth": 97,
-                            "imgHeight": 97
+                            "imgUrl": "https://upload.wikimedia.org/wikipedia/commons/3/3f/Git_icon.svg"
                         },
                         {
                             "name": "Memcached",
                             "size": 5460,
-                            "imgUrl": "https://upload.wikimedia.org/wikipedia/en/2/27/Memcached.svg",
-                            "imgWidth": 254,
-                            "imgHeight": 254
+                            "imgUrl": "https://upload.wikimedia.org/wikipedia/en/2/27/Memcached.svg"
                         }
                     ]
                 },
@@ -226,100 +170,72 @@
                         {
                             "name": "Buildout",
                             "size": 5050,
-                            "imgUrl": "https://upload.wikimedia.org/wikipedia/commons/c/c3/Python-logo-notext.svg",
-                            "imgWidth": 110.4211,
-                            "imgHeight": 109.8461
+                            "imgUrl": "https://upload.wikimedia.org/wikipedia/commons/c/c3/Python-logo-notext.svg"
                         },
                         {
                             "name": "Supervisord",
                             "size": 5050,
-                            "imgUrl": "https://avatars0.githubusercontent.com/u/513914?v=3&s=75",
-                            "imgWidth": 75,
-                            "imgHeight": 75
+                            "imgUrl": "https://avatars0.githubusercontent.com/u/513914?v=3&s=75"
                         },
                         {
                             "name": "Cron",
                             "size": 5050,
-                            "imgUrl": "https://upload.wikimedia.org/wikipedia/commons/d/d8/High-contrast-utilities-terminal.svg",
-                            "imgWidth": 60,
-                            "imgHeight": 60
+                            "imgUrl": "https://upload.wikimedia.org/wikipedia/commons/d/d8/High-contrast-utilities-terminal.svg"
                         },
                         {
                             "name": "XAMPP",
                             "size": 5050,
-                            "imgUrl": "https://d16zszyyqlzz6z.cloudfront.net/images/xampp-logo-ac950edf.svg",
-                            "imgWidth": 141.219,
-                            "imgHeight": 142.548
+                            "imgUrl": "https://d16zszyyqlzz6z.cloudfront.net/images/xampp-logo-ac950edf.svg"
                         },
                         {
                             "name": "Zabbix",
                             "size": 3460,
-                            "imgUrl": "https://api.jujucharms.com/v5/trusty/zabbix-server-1/icon.svg",
-                            "imgWidth": 139,
-                            "imgHeight": 135
+                            "imgUrl": "https://api.jujucharms.com/v5/trusty/zabbix-server-1/icon.svg"
                         },
                         {
                             "name": "Composer",
                             "size": 5050,
-                            "imgUrl": "https://atoum.github.io/images/integrations_logos/composer.svg",
-                            "imgWidth": 256,
-                            "imgHeight": 339
+                            "imgUrl": "https://atoum.github.io/images/integrations_logos/composer.svg"
                         },
                         {
                             "name": "Selenium",
                             "size": 5050,
-                            "imgUrl": "https://plus1generation.com/img/small-logo-bar/Selenium%20Logo%20Upright.svg",
-                            "imgWidth": 250,
-                            "imgHeight": 250
+                            "imgUrl": "https://plus1generation.com/img/small-logo-bar/Selenium%20Logo%20Upright.svg"
                         },
                         {
                             "name": "Protractor",
                             "size": 3460,
-                            "imgUrl": "http://codecept.io/images/angular-protractor.png",
-                            "imgWidth": 526,
-                            "imgHeight": 233
+                            "imgUrl": "http://codecept.io/images/angular-protractor.png"
                         },
                         {
                             "name": "npm",
                             "size": 5050,
-                            "imgUrl": "https://upload.wikimedia.org/wikipedia/commons/d/db/Npm-logo.svg",
-                            "imgWidth": 540,
-                            "imgHeight": 210
+                            "imgUrl": "https://upload.wikimedia.org/wikipedia/commons/d/db/Npm-logo.svg"
                         },
                         {
                             "name": "Bower",
                             "size": 5050,
-                            "imgUrl": "https://bower.io/img/bower-logo.svg",
-                            "imgWidth": 462.529,
-                            "imgHeight": 406.613
+                            "imgUrl": "https://bower.io/img/bower-logo.svg"
                         },
                         {
                             "name": "gulp",
                             "size": 5050,
-                            "imgUrl": "https://sebastianhenneberg.github.io/spa_with_angularjs/images/GulpJS.svg",
-                            "imgWidth": 400,
-                            "imgHeight": 400
+                            "imgUrl": "https://sebastianhenneberg.github.io/spa_with_angularjs/images/GulpJS.svg"
                         },
                         {
                             "name": "WebdriverIO",
                             "size": 3460,
-                            "imgUrl": "http://webdriver.io/images/webdriverio.png",
-                            "imgWidth": 167,
-                            "imgHeight": 196
+                            "imgUrl": "http://webdriver.io/images/webdriverio.png"
                         },
                         {
                             "name": "Jasmine",
                             "size": 3460,
-                            "imgUrl": "https://jasmine.github.io/images/jasmine_vertical.svg",
-                            "imgWidth": 270,
-                            "imgHeight": 270
+                            "imgUrl": "https://jasmine.github.io/images/jasmine_vertical.svg"
                         },
                         {
                             "name": "Karma",
                             "size": 3460,
-                            "imgUrl": "https://worldvectorlogo.com/logos/karma.svg",
-                            "imgWidth": 256,
-                            "imgHeight": 198
+                            "imgUrl": "https://worldvectorlogo.com/logos/karma.svg"
                         }
                     ]
                 },
@@ -329,94 +245,67 @@
                         {
                             "name": "WordPress",
                             "size": 10050,
-                            "imgUrl": "https://upload.wikimedia.org/wikipedia/commons/9/98/WordPress_blue_logo.svg",
-                            "imgWidth": 122.52,
-                            "imgHeight": 122.523,
-                            "viewBox": "0 0 122.52 122.523"
+                            "imgUrl": "https://upload.wikimedia.org/wikipedia/commons/9/98/WordPress_blue_logo.svg"
                         },
                         {
                             "name": "MediaWiki",
                             "size": 9850,
-                            "imgUrl": "https://upload.wikimedia.org/wikipedia/commons/b/bb/MediaWiki-notext.svg",
-                            "imgWidth": 685.49963,
-                            "imgHeight": 530
+                            "imgUrl": "https://upload.wikimedia.org/wikipedia/commons/b/bb/MediaWiki-notext.svg"
                         },
                         {
                             "name": "Trac",
                             "size": 6260,
-                            "imgUrl": "https://worldvectorlogo.com/logos/trac-2.svg",
-                            "imgWidth": 256,
-                            "imgHeight": 307
+                            "imgUrl": "https://worldvectorlogo.com/logos/trac-2.svg"
                         },
                         {
                             "name": "Solr",
                             "size": 5050,
-                            "imgUrl": "assets/solr.svg",
-                            "imgWidth": 207.3,
-                            "imgHeight": 107.8
+                            "imgUrl": "assets/solr.svg"
                         },
                         {
                             "name": "Lucene",
                             "size": 5050,
-                            "imgUrl": "https://upload.wikimedia.org/wikipedia/commons/d/d1/Lucene_logo_green_300.png",
-                            "imgWidth": 300,
-                            "imgHeight": 46
+                            "imgUrl": "https://upload.wikimedia.org/wikipedia/commons/d/d1/Lucene_logo_green_300.png"
                         },
                         {
                             "name": "Nutch",
                             "size": 5050,
-                            "imgUrl": "https://upload.wikimedia.org/wikipedia/commons/8/89/Nutch_logo.svg",
-                            "imgWidth": 3792,
-                            "imgHeight": 1407
+                            "imgUrl": "https://upload.wikimedia.org/wikipedia/commons/8/89/Nutch_logo.svg"
                         },
                         {
                             "name": "Parsoid",
                             "size": 5050,
-                            "imgUrl": "https://upload.wikimedia.org/wikipedia/commons/3/39/Parsoid_logo.svg",
-                            "imgWidth": 685.49963,
-                            "imgHeight": 620
+                            "imgUrl": "https://upload.wikimedia.org/wikipedia/commons/3/39/Parsoid_logo.svg"
                         },
                         {
                             "name": "Tika",
                             "size": 3460,
-                            "imgUrl": "https://upload.wikimedia.org/wikipedia/commons/7/74/Apache_Tika_Logo.svg",
-                            "imgWidth": 361.2,
-                            "imgHeight": 123.74
+                            "imgUrl": "https://upload.wikimedia.org/wikipedia/commons/7/74/Apache_Tika_Logo.svg"
                         },
                         {
                             "name": "Elasticsearch",
                             "size": 5050,
-                            "imgUrl": "https://static-www.elastic.co/assets/bltfdc1abb6ea9e2157/icon-elasticsearch.svg",
-                            "imgWidth": 185,
-                            "imgHeight": 185
+                            "imgUrl": "https://static-www.elastic.co/assets/bltfdc1abb6ea9e2157/icon-elasticsearch.svg"
                         },
                         {
                             "name": "jQuery",
                             "size": 5050,
-                            "imgUrl": "https://upload.wikimedia.org/wikipedia/commons/8/81/JQuery_logo_text.svg",
-                            "imgWidth": 419.58,
-                            "imgHeight": 118.2
+                            "imgUrl": "https://upload.wikimedia.org/wikipedia/commons/8/81/JQuery_logo_text.svg"
                         },
                         {
                             "name": "Bootstrap",
                             "size": 5050,
-                            "imgUrl": "https://upload.wikimedia.org/wikipedia/commons/e/ea/Boostrap_logo.svg",
-                            "imgWidth": 2000,
-                            "imgHeight": 2008.2758
+                            "imgUrl": "https://upload.wikimedia.org/wikipedia/commons/e/ea/Boostrap_logo.svg"
                         },
                         {
                             "name": "FontAwesome",
                             "size": 5050,
-                            "imgUrl": "https://www.vectorlogo.zone/logos/font-awesome/font-awesome-icon.svg",
-                            "imgWidth": 32,
-                            "imgHeight": 32
+                            "imgUrl": "https://www.vectorlogo.zone/logos/font-awesome/font-awesome-icon.svg"
                         },
                         {
                             "name": "Zend",
                             "size": 5050,
-                            "imgUrl": "https://zendframework.github.io/zend-expressive/img/zf-logo-mark.svg",
-                            "imgWidth": 359.1,
-                            "imgHeight": 172.3
+                            "imgUrl": "https://zendframework.github.io/zend-expressive/img/zf-logo-mark.svg"
                         }
                     ]
                 }
