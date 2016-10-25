@@ -247,8 +247,8 @@ function circleChart(selector, margin, diameter, dataFile) {
         });
 
         svg.selectAll("use")
-            .attr("width", function(d) { return d.r * k; })
-            .attr("height", function(d) { return d.r * k; });
+            .attr("width", function(d) { return d.r * k * 1.5; })
+            .attr("height", function(d) { return d.r * k * 1.5; });
 
         var transformInfo;
         // get all <use> and for each move it to <circle> centre
