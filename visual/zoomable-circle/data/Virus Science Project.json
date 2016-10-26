@@ -8,7 +8,7 @@
            "children":[
              {"name":"Virus",
               "children":[{"name":"Virus",
-              "size":66000,
+              "size":33000,
               "imgUrl":"http://cdn.yourarticlelibrary.com/wp-content/uploads/2013/12/959.jpg"}]},
 
              {"name":"",
@@ -22,7 +22,7 @@
            "children":[
              {"name":"",
               "children":[{"name":"",
-              "size":66000,
+              "size":33000,
               "imgUrl":"http://cdn.yourarticlelibrary.com/wp-content/uploads/2013/12/959.jpg"}]},
 
              {"name":"",
@@ -36,19 +36,49 @@
 
       {"name":"Transmission",
        "children":[
+
           {"name":"Why virus targets you?",
-           "children":[{"name":"",
+           "children":[
+             {"name":"Virus",
+              "children":[{"name":"Virus",
+              "size":13000,
+              "imgUrl":"http://cdn.yourarticlelibrary.com/wp-content/uploads/2013/12/959.jpg"}]},
+
+             {"name":"",
+              "children":[{"name":"",
               "size":66000,
-              "imgUrl":"http://seanchen.github.io/visual/zoomable-circle/assets/transmission-1.png"}]},
+              "imgUrl":"http://seanchen.github.io/visual/zoomable-circle/assets/transmission-1.png"}]}
+           ]
+          },
 
           {"name":"What lifestyle choices",
-           "children":[{"name":".",
+           "children":[
+             {"name":"Virus",
+              "children":[{"name":"Virus",
+              "size":13000,
+              "imgUrl":"http://cdn.yourarticlelibrary.com/wp-content/uploads/2013/12/959.jpg"}]},
+
+             {"name":"",
+              "children":[{"name":"",
               "size":66000,
-              "imgUrl":"http://seanchen.github.io/visual/zoomable-circle/assets/transmission-2.png"}]},
+              "imgUrl":"http://seanchen.github.io/visual/zoomable-circle/assets/transmission-2.png"}]}
+           ]
+          },
+
           {"name":"How they are effected?",
-           "children":[{"name":".",
+           "children":[
+             {"name":"Virus",
+              "children":[{"name":"Virus",
+              "size":13000,
+              "imgUrl":"http://cdn.yourarticlelibrary.com/wp-content/uploads/2013/12/959.jpg"}]},
+
+             {"name":"",
+              "children":[{"name":"",
               "size":66000,
               "imgUrl":"http://seanchen.github.io/visual/zoomable-circle/assets/transmission-3.png"}]}
+           ]
+          }
+
        ]
       },
 
