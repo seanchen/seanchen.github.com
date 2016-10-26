@@ -19,7 +19,9 @@
           },
 
           {"name":"What virus effects? Why?",
-           "children":[{"name":"",
+           "children":[
+             {"name":"",
+              "children":[{"name":"",
               "size":66000,
               "imgUrl":"http://cdn.yourarticlelibrary.com/wp-content/uploads/2013/12/959.jpg"}]},
 
@@ -27,6 +29,8 @@
               "children":[{"name":"",
               "size":66000,
               "imgUrl":"http://seanchen.github.io/visual/zoomable-circle/assets/host-2.png"}]}
+            ]
+          }
        ]
       },
 
