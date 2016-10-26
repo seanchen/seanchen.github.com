@@ -6,7 +6,7 @@
        "children":[
           {"name":"Where virus comes from?",
            "children":[
-             {"name":"Virus",
+             {"name":"",
               "children":[{"name":"",
               "size":33000,
               "imgUrl":"https://images5.alphacoders.com/354/thumb-1920-354030.jpg"}]},
@@ -20,7 +20,7 @@
 
           {"name":"What virus effects? Why?",
            "children":[
-             {"name":"",
+             {"name":"Virus",
               "children":[{"name":"Virus",
               "size":13000,
               "imgUrl":"http://cdn.yourarticlelibrary.com/wp-content/uploads/2013/12/959.jpg"}]},
