@@ -85,36 +85,72 @@
       {"name":"Symptoms",
        "children":[
           {"name":"How damaged system impact others",
-           "children":[{"name":"",
+           "children":[
+             {"name":"Virus",
+              "children":[{"name":"Virus",
+              "size":13000,
+              "imgUrl":"http://cdn.yourarticlelibrary.com/wp-content/uploads/2013/12/959.jpg"}]},
+
+             {"name":"",
+              "children":[{"name":"",
               "size":66000,
               "imgUrl":"http://seanchen.github.io/visual/zoomable-circle/assets/symptoms.png"}]}
+           ]
+          }
        ]
       },
 
       {"name":"Treatment",
        "children":[
-          {"name":"What's the health lifestyle choices?",
-           "children":[{"name":"",
+          {"name":"What are the health lifestyle choices?",
+           "children":[
+             {"name":"Virus",
+              "children":[{"name":"Virus",
+              "size":13000,
+              "imgUrl":"http://cdn.yourarticlelibrary.com/wp-content/uploads/2013/12/959.jpg"}]},
+
+             {"name":"",
+              "children":[{"name":"",
               "size":66000,
               "imgUrl":"http://seanchen.github.io/visual/zoomable-circle/assets/treatment.png"}]}
+           ]
+          }
        ]
       },
 
       {"name":"Personal Connection",
        "children":[
-          {"name":"What's the health lyfestyle choices?",
-           "children":[{"name":"",
+          {"name":"personal connection",
+           "children":[
+             {"name":"Virus",
+              "children":[{"name":"Virus",
+              "size":13000,
+              "imgUrl":"http://cdn.yourarticlelibrary.com/wp-content/uploads/2013/12/959.jpg"}]},
+
+             {"name":"",
+              "children":[{"name":"",
               "size":66000,
               "imgUrl":"http://seanchen.github.io/visual/zoomable-circle/assets/personal.png"}]}
+           ]
+          }
        ]
       },
 
       {"name":"Other Things",
        "children":[
-          {"name":"What's the health lyfestyle choices?",
-           "children":[{"name":"",
+          {"name":"Others",
+           "children":[
+             {"name":"Virus",
+              "children":[{"name":"Virus",
+              "size":13000,
+              "imgUrl":"http://cdn.yourarticlelibrary.com/wp-content/uploads/2013/12/959.jpg"}]},
+
+             {"name":"",
+              "children":[{"name":"",
               "size":66000,
               "imgUrl":"http://seanchen.github.io/visual/zoomable-circle/assets/other.png"}]}
+           ]
+          }
        ]
       }
     ]
