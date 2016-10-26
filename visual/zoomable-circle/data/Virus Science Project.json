@@ -4,7 +4,7 @@
    "children":[
       {"name":"Host",
        "children":[
-          {"name":"Where virus come from?",
+          {"name":"Where virus comes from?",
            "children":[
              {"name":"Virus",
               "children":[{"name":"Virus",
@@ -18,8 +18,13 @@
            ]
           },
 
-          {"name":"What virus effect? Why?",
+          {"name":"What virus effects? Why?",
            "children":[{"name":"",
+              "size":66000,
+              "imgUrl":"http://cdn.yourarticlelibrary.com/wp-content/uploads/2013/12/959.jpg"}]},
+
+             {"name":"",
+              "children":[{"name":"",
               "size":66000,
               "imgUrl":"http://seanchen.github.io/visual/zoomable-circle/assets/host-2.png"}]}
        ]
@@ -27,7 +32,7 @@
 
       {"name":"Transmission",
        "children":[
-          {"name":"Why virus target you?",
+          {"name":"Why virus targets you?",
            "children":[{"name":"",
               "size":66000,
               "imgUrl":"http://seanchen.github.io/visual/zoomable-circle/assets/transmission-1.png"}]},
