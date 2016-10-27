@@ -37,6 +37,14 @@ jQuery(document).ready(function($) {
         $('#jsonstring').html(JSON.stringify(editor.get()).
                               replace(/,/g, ',\n'));
     });
+
+    // load the full page to show current circles.
+    $('#fullpage').on('click', function(e) {
+
+        var filePath = $('#example').val();
+        var url = 'full.html?data=' + filePath;
+        window.location.href = url;
+    });
 });
 
 /**
