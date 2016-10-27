@@ -1,12 +1,16 @@
 jQuery(document).ready(function($) {
 
     var filePath = getUrlParameter('data');
+    if(filePath === undefined) {
+        // redirect to home page.
+        window.location.href = 'index.html';
+    }
     var diameter = getUrlParameter('diameter');
     // set the default diameter to 700px.
     // TODO: check the screen size (height or width, amaller one).
     // automatically set the diameter based on the screen size.
     diameter = diameter === undefined ? 700 : diameter;
-    $('#svgfull').html('file: ' + filePath);
+    //$('#svgfull').html('file: ' + filePath);
     $.getJSON(filePath, function(data) {
         circleChart('#svgfull', 10, diameter, data);
     });
