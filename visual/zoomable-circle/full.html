@@ -27,6 +27,35 @@ https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/1.5.15/clipboard.js"></scrip
 
   <script src='js/zoomable-circles.js'></script>
   <script src='js/zoomable-circles-full.js'></script>
+
+<style>
+/**
+ * styles needed for zoomable circles.
+ */
+.node {
+    cursor: pointer;
+}
+
+.node:hover {
+    stroke: #000;
+    stroke-width: 1.5px;
+}
+
+.node--leaf {
+    fill: white;
+}
+
+.label {
+    font: 16px "Helvetica Neue", Helvetica, Arial, sans-serif;
+    text-anchor: middle;
+    font-weight: bold;
+    text-shadow: 0 1px 0 #fff, 1px 0 0 #fff, -1px 0 0 #fff, 0 -1px 0 #fff;
+}
+
+.label, .node--root, .node--leaf, use {
+    pointer-events: none;
+}
+  </style>
 </head>
 <body>
 <div id="svgfull"></div>
