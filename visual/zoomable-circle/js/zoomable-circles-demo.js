@@ -42,7 +42,9 @@ jQuery(document).ready(function($) {
     $('#fullpage').on('click', function(e) {
 
         var filePath = $('#example').val();
-        var url = 'full.html?data=' + filePath;
+        var diameter = $('#fullscreenSize').val();
+        var url = 'full.html?data=' + filePath + 
+                  '&diameter=' + diameter;
         window.location.href = url;
     });
 });

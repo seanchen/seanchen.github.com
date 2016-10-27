@@ -12,7 +12,7 @@ jQuery(document).ready(function($) {
     diameter = diameter === undefined ? 700 : diameter;
     //$('#svgfull').html('file: ' + filePath);
     $.getJSON(filePath, function(data) {
-        circleChart('#svgfull', 10, diameter, data);
+        circleChart('#svgfull', 20, diameter, data);
     });
 });
 
