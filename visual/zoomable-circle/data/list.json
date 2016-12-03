@@ -1,0 +1,9 @@
+{
+  "datalist": [
+    "https://cdn.rawgit.com/leocornus/leocornus-visualdata/77548f801b2a8d1235d1631efe8ea88794bb2b17/demo/zoomable-circle/data/hiv-aids-in-Canada-2015.json",
+    "https://cdn.rawgit.com/leocornus/leocornus-visualdata/77548f801b2a8d1235d1631efe8ea88794bb2b17/demo/zoomable-circle/data/canada-national-bird-vote.json",
+    "https://cdn.rawgit.com/leocornus/leocornus-visualdata/77548f801b2a8d1235d1631efe8ea88794bb2b17/demo/zoomable-circle/data/opspedia-overview-in-circles.json",
+    "https://cdn.rawgit.com/leocornus/leocornus-visualdata/77548f801b2a8d1235d1631efe8ea88794bb2b17/demo/zoomable-circle/data/world-war-ii-total-deaths.json",
+    "https://cdn.rawgit.com/leocornus/leocornus-visualdata/77548f801b2a8d1235d1631efe8ea88794bb2b17/demo/zoomable-circle/data/simple-circles.json"
+  ]
+}
