@@ -1,9 +1,20 @@
 {
   "datalist": [
-    "https://cdn.rawgit.com/leocornus/leocornus-visualdata/77548f801b2a8d1235d1631efe8ea88794bb2b17/demo/zoomable-circle/data/hiv-aids-in-Canada-2015.json",
-    "https://cdn.rawgit.com/leocornus/leocornus-visualdata/77548f801b2a8d1235d1631efe8ea88794bb2b17/demo/zoomable-circle/data/canada-national-bird-vote.json",
-    "https://cdn.rawgit.com/leocornus/leocornus-visualdata/77548f801b2a8d1235d1631efe8ea88794bb2b17/demo/zoomable-circle/data/opspedia-overview-in-circles.json",
-    "https://cdn.rawgit.com/leocornus/leocornus-visualdata/77548f801b2a8d1235d1631efe8ea88794bb2b17/demo/zoomable-circle/data/world-war-ii-total-deaths.json",
-    "https://cdn.rawgit.com/leocornus/leocornus-visualdata/77548f801b2a8d1235d1631efe8ea88794bb2b17/demo/zoomable-circle/data/simple-circles.json"
+    "https://cdn.rawgit.com/leocornus/leocornus-visualdata/v0.0.6/demo/zoomable-circle/data/hiv-aids-in-Canada-2015.json",
+    "https://cdn.rawgit.com/leocornus/leocornus-visualdata/v0.0.6/demo/zoomable-circle/data/canada-national-bird-vote.json",
+    "https://cdn.rawgit.com/leocornus/leocornus-visualdata/v0.0.6/demo/zoomable-circle/data/opspedia-overview-in-circles.json",
+    "https://cdn.rawgit.com/leocornus/leocornus-visualdata/v0.0.6/demo/zoomable-circle/data/world-war-ii-total-deaths.json",
+    "https://cdn.rawgit.com/leocornus/leocornus-visualdata/v0.0.6/demo/zoomable-circle/data/simple-circles.json",
+    "https://cdn.rawgit.com/leocornus/leocornus-visualdata/v0.0.6/demo/zoomable-circle/data/12-equal-size-circles.json",
+    "https://cdn.rawgit.com/leocornus/leocornus-visualdata/v0.0.6/demo/zoomable-circle/data/3-equal-size-circles.json"
+  ],
+  "labelList": [
+     "HIV and AIDS in Canada 2015",
+     "Canada national bird vote",
+     "OPSpedia Overview (Technology)",
+     "World War II Total deaths",
+     "Simple Circles",
+     "12 Equal Size Circles",
+     "3 Equal Size Circles"
   ]
 }
