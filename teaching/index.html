@@ -16,8 +16,13 @@
          id="guess-message">Mwssage:</div>
   </body>
   <script>
+    // set the rabdom number
     var theNumber = Math.floor((Math.random() * 100) + 1);
     document.getElementById("correct-number").
     setAttribute("value", theNumber);
+    
+    ducument.getElementById("guess").onclick = function() {
+      alert(theNumber);
+    }
   </script>
 </html>
