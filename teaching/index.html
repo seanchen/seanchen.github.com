@@ -12,7 +12,12 @@
     <input type="number" id="guess-number"/>
     <input type="button" id="guess" value="Guess" />
     <!-- show the guess result here!-->
-    <div style="background:black; text:white"
+    <div style="background-color:black; color:white"
          id="guess-message">Mwssage:</div>
   </body>
+  <script>
+    var theNumber = Math.floor((Math.random() * 100) + 1);
+    document.getElementById("correct-number").
+    setAttribute("value", theNumber);
+  </script>
 </html>
