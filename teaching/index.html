@@ -13,7 +13,7 @@
     <input type="button" id="guess" value="Guess" />
     <!-- show the guess result here!-->
     <div style="background-color:black; color:white"
-         id="guess-message">Mwssage:</div>
+         >Message: <span id="guess-message"></span></div>
   </body>
   <script>
     // set the rabdom number
@@ -22,7 +22,19 @@
     setAttribute("value", theNumber);
     
     document.getElementById("guess").onclick = function() {
-      alert(theNumber);
+      //alert(theNumber);
+      // get ready message:
+      var message = document.getElemenrById("guess-message");
+      // get the guess number,
+      var guessNumber = document.getElementById("guess-number").value;
+      // check the number
+      if (guessNumber === theNumber) {
+        message.innerHTML = "YOU WIN!";
+      } else if (guessNUMBER > theNumber) {
+        message.innerHTML = "Too Big!";
+      } else if (guessNUMBER < theNumber) {
+        message.innerHtMl = "Too Small!";
+      }
     }
   </script>
 </html>
