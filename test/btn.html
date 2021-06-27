@@ -1,0 +1,45 @@
+<html>
+<head>
+</head>
+<body>
+   <button id="counter1" onclick="countme('counter1');">0</button>
+   <button id="counter2" onclick="countme('counter2');">0</button>
+</body>
+  <script>
+alert("Hello");
+var interval = 1000;
+function countme(btnId) {
+
+    var btnEle = document.getElementById(btnId);
+    var count = parseInt(btnEle.innerHTML);
+    console.log(count);
+    btnEle.innerHTML = (count + 1).toString();
+    // set background color
+    btnEle.style.backgroundColor="yellow";
+    // get the current class name.
+    var className = btnEle.className;
+    if(className == '') {
+        btnEle.className = 'click' + count;
+    } else {
+        btnEle.className = className + " click" + count;
+    }
+    window.setTimeout( function() {
+        // check the class name of the the button.
+        var element = document.getElementById(btnId);
+        if(element.className.split(' ').length > 1) {
+            // more then one click happend.
+            // keep the backgroup color and remove one class name.
+            var names = element.className.split(' ');
+            console.log(names);
+            names.pop();
+            element.className = names.join(' ');
+        } else {
+            // reset background color
+            element.style.backgroundColor=null;
+            // reset class name.
+            element.className = '';
+        }
+    }, interval );
+}
+  </script>
+</html>
