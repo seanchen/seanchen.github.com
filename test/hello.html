@@ -31,18 +31,20 @@ console.log(a, b, c) //expected output: 1  2  3
   * has to work with height and width.
   */
 #smile {
+    padding-bottom: 12px;
     display: table-cell;
     height: 12px;
-    width: 16px;
-    background-color: yellow;
+    width: 22px;
     transform: rotate(90deg);
 }
 </style>
 </head>
 <body>
-    <div style="display: table">
-    <div style="display: table-cell">Hello World</div>
-    <div id="smile">:)</div>
+    <div style="display: table; font-size: large; font-weight: bloder">
+      <div style="display: table-row">
+        <div style="display: table-cell">Hello World</div>
+        <div id="smile">:)</div>
+      </div>
     </div>
 </body>
 </html>
